@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheest" href="./styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        
+            <div class="form-group">
+                <label for="select-categories"><b>Selecciona la categoria:</b></label><br><br>
+                <select onchange="selectCategory()" class="form-control" id="select-categories"><br>
+                  <!-- Aquí van las opciones generadas con javascript -->
+                </select>
+    
+                <!-- aqui van los tipos de preguntas -->
+                <br>
+                <label for="type"><b>Selecciona los tipos de preguntas:</b> </label><br><br>
+                <select onchange="selectTrueFalseMultiple()" class="form-control" id="type">
+                </select>  
+            </div><br>
+            <button class="btn btn-primary btn-block" onclick="getQuestions()">Mostrar las preguntas</button><br><br>
+        
+                <div class="row" id="preguntas">
+                    
+                        <!-- aqui van las preguntas -->
+                   
+                </div>
+            
+            <br>
+            <button id="button-result"  class="btn btn-primary btn-block" type="button" onclick="mostrarResultado()" name="button">Mostar Resultados</button><br> <br>
+            <div id="resultados"></div>
+            <!-- aqui van el resultado -->
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
