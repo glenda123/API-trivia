@@ -107,7 +107,7 @@ function selectTrueFalseMultiple(){
             if (pregunta.type==="boolean"){
     
                 return `
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                 <div class="card mb-4">
                     <div class="card-body">
                        
@@ -128,7 +128,7 @@ function selectTrueFalseMultiple(){
             else if(pregunta.type==="multiple"){
     
                 return `
-                <div class="col-3">
+                <div class="col-3 col-sm-12">
                   <div class="card mb-4">
                      <div class="card-body">
                        <p class="card-text"><b>${index+1}. ${pregunta.question}</b></p><br>
